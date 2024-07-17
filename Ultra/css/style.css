@@ -471,6 +471,24 @@
     color: var(--bs-white);
 }
 
+
+
+.page-headerApropos {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/BarnerApropos.jpg) center center no-repeat;
+    background-size: cover;
+    text-shadow: 2px 2px 4px #780c19cb;
+}
+
+.page-headerApropos .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--bs-white);
+}
+
+.page-headerApropos .breadcrumb-item,
+.page-headerApropos .breadcrumb-item a {
+    font-size: 18px;
+    color: var(--bs-white);
+}
+
 /*** Carousel End ***/
 
 
