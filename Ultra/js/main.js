@@ -104,6 +104,24 @@
     });
 
 
+     // Show the modal when the image is clicked
+     $("#project-img").on("click", function() {
+        $("#popup-modal").fadeIn();
+    });
+
+    // Close the modal when the close button is clicked
+    $(".close-button").on("click", function() {
+        $("#popup-modal").fadeOut();
+    });
+
+    // Close the modal when clicking outside of the modal content
+    $(window).on("click", function(event) {
+        if ($(event.target).is("#popup-modal")) {
+            $("#popup-modal").fadeOut();
+        }
+    });
+
+
 
 })(jQuery);
 

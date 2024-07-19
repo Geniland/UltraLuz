@@ -41,7 +41,7 @@
                 <div class="d-flex justify-content-between topbar">
                     <div class="top-info">
                         <small class="me-3 text-white-50"><a href="#"><i class="fas fa-map-marker-alt me-2 text-secondary"></i></a>Adidogome</small>
-                        <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a>UltraLuz@Example.com</small>
+                        <small class="me-3 text-white-50"><a href="#"><i class="fas fa-envelope me-2 text-secondary"></i></a> info.ultraluzservices@gmail.com</small>
                     </div>
                     <div id="note" class="text-secondary d-none d-xl-flex"><small>Note : Nous vous aidons a developper vos talents et a vous booster</small></div>
                     <div class="top-link">
@@ -168,7 +168,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                     <div class="project-item">
                         <div class="project-img">
-                            <img src="img/MultiMd.jpg" class="img-fluid w-100 rounded" alt="">
+                            <img src="img/MultiMd.jpg" class="img-fluid w-100 rounded" id="project-img" alt="">
                             <div class="project-content">
                                 <a href="#" class="text-center">
                                     <h4 class="text-secondary">Réalisation</h4>
@@ -178,6 +178,17 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Pop-up Modal -->
+                <div id="popup-modal" class="popup">
+                    <div class="popup-content">
+                        <span class="close-button">&times;</span>
+                        <h4 class="text-secondary">Réalisation</h4>
+                        <p class="m-0 text-white">Et Production Multimédia</p>
+                    </div>
+                </div>
+
+
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
                     <div class="project-item">
                         <div class="project-img">
@@ -238,6 +249,20 @@
                                 <a href="#" class="text-center">
                                     <h4 class="text-secondary">Production Audio</h4>
                                     <p class="m-0 text-white">Divers</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                    <div class="project-item">
+                        <div class="project-img">
+                            <img src="img/Events.jpg" class="img-fluid w-100 rounded" alt="">
+                            <div class="project-content">
+                                <a href="#" class="text-center">
+                                    <h4 class="text-secondary">évènementiel</h4>
+                                    
                                 </a>
                             </div>
                         </div>
@@ -342,9 +367,9 @@
             <div class="col-lg-3 col-md-6">
                 <a href="#" class="h3 colorInitial2">Contact Us</a>
                 <div class="text-white mt-4 d-flex flex-column contact-link">
-                    <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt colorInitial2 me-2"></i> Adidogome Carrefour Adji , Lome</a>
+                    <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt colorInitial2 me-2"></i>Localisation</a>
                     <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt colorInitial2 me-2"></i> +228 90385514</a>
-                    <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope colorInitial2 me-2"></i> info@exmple.con</a>
+                    <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope colorInitial2 me-2"></i> info.ultraluzservices@gmail.com</a>
                 </div>
             </div>
         </div>
@@ -374,6 +399,7 @@
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>

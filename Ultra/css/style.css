@@ -38,6 +38,47 @@
     background-color: #8db51e;
 }
 
+/**Pop-up**/
+/* Styles for the Pop-up */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    backdrop-filter: blur(10px); /* Blur background */
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 /** Notre vision **/
 
 .section {
@@ -448,6 +489,44 @@
 
 .page-headerr .breadcrumb-item,
 .page-headerr .breadcrumb-item a {
+    font-size: 18px;
+    color: var(--bs-white);
+}
+
+
+
+
+
+
+.page-headerMultimedia {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/Multimédia.jpg) center center no-repeat;
+    background-size: cover;
+    text-shadow: 2px 2px 4px #780c19cb;
+}
+
+.page-headerMultimedia .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--bs-white);
+}
+
+.page-headerMultimedia .breadcrumb-item,
+.page-headerMultimedia .breadcrumb-item a {
+    font-size: 18px;
+    color: var(--bs-white);
+}
+
+
+.page-headerImp {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/Imprimerie.jpg) center center no-repeat;
+    background-size: cover;
+    text-shadow: 2px 2px 4px #780c19cb;
+}
+
+.page-headerImp .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--bs-white);
+}
+
+.page-headerImp .breadcrumb-item,
+.page-headerImp .breadcrumb-item a {
     font-size: 18px;
     color: var(--bs-white);
 }
